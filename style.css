@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: bisque;
+    /* margin: 10px;
+    padding: 10px; */
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+.navbar {
+    background-color: rgb(59, 87, 87);
+    color: #fff;
+    width: 100%;
+    height: 70px;
+}
+
+.move-right {
+    text-align: right;
+}
+
+.move-right ul li {
+    display: inline-block;
+    margin: 20px;
+}
+
+.profile {
+    margin-right: 480px;
+}
+
+#addbtn {
+    height: 70px;
+    width: 180px;
+    position: fixed;
+    right: 50%;
+    top: 75px;
+    background-color: #220808;
+    font-size: 20px;
+    color: white;
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    border-radius: 0;
+}
+
+.container {
+    width: 100%;
+    height: max-content;
+    border: 10px solid red;
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.note {
+    width: 400px;
+    height: 400px;
+    background-color: aquamarine;
+    margin: 15px;
+}
+
+.note-navbar {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(26, 15, 15);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.note-navbar ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    gap: 100px;
+}
+
+textarea {
+    border: none;    
+    width: 400px;
+    height: 350px;
+    resize: none;
+    padding: 10px;
+    font-size: 30px;
+    color: rgb(28, 43, 43);
+    background-color: rgb(165, 170, 150);
+}
+
+.note-navbar textarea:focus {
+    border: 0;
+    outline: 0;
+}
