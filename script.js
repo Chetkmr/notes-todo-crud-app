@@ -10,6 +10,27 @@ addBtn.addEventListener(
     }
 );
 
+// function to save the Notes
+const saveNots = () => {
+    const Notes = document.querySelectorAll(".note textarea");
+    console.log(Notes);
+    
+    const Data = [];
+    Notes.forEach((note) =>{
+        Data.push(note.value);
+    });
+    console.log(Data);
+
+    localStorage.setItem("Notes", JSON.stringify(Data));
+}
+
+// (
+//     function(){
+//         const lsNotes = localStorage.parse(getItem("Notes"));
+//         console.log(lsNotes);
+        
+//     }
+// )()
 
 // function to add note
 const addNote = () => {
@@ -33,16 +54,15 @@ const addNote = () => {
         `;
 
     //function to remove note
-    note.addEventListener("click", function () {
+    note.querySelector(".remove-Note").addEventListener("click", function () {
         note.remove();
+        saveNots();
     }
     );
 
-    // note.addEventListener("click", function () {
-    //     saveNots(){
-    //         17.21
-    //     }
-    // })
-    main.appendChild(note)
+    note.querySelector(".save").addEventListener("click", function () {
+        saveNots();
+    });
+    main.appendChild(note);
 
 }
