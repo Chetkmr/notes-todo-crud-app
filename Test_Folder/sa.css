@@ -1,0 +1,111 @@
+/* --- GENERAL PAGE STYLE --- */
+
+body {
+    margin: 0;
+    background: #EAD8B1;
+    font-family: Arial, sans-serif;
+}
+
+/* --- NAVBAR --- */
+
+.navbar {
+    width: 100%;
+    background: #3A6D8C;
+    padding: 15px 0;
+    border-radius: 0 0 12px 12px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+/* --- ADD NOTE BUTTON --- */
+
+#addbtn {
+    display: block;
+    margin: 25px auto;
+    padding: 12px 24px;
+    background: #001F3F;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#addbtn:hover {
+    background: #58493e;
+}
+
+/* --- NOTES GRID --- */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+/* --- INDIVIDUAL NOTE --- */
+
+.note {
+    background: #a7ae9e;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- NOTE NAVBAR --- */
+
+.note-navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background: #6A9AB0;
+    padding: 10px;
+    color: white;
+    border-radius: 8px;
+    margin: 0 0 10px 0;
+}
+
+.note-navbar li {
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.note-navbar li:hover {
+    opacity: 0.7;
+}
+
+/* --- TEXT AREA --- */
+
+.note textarea {
+    width: 100%;
+    height: 180px;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    resize: none;
+    background: #d0d5c7;
+    outline: none;
+}
